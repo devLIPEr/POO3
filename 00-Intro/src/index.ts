@@ -20,4 +20,4 @@ var produtos : Produto[] = [
 ];
 var venda: Venda = new Venda(11125463, 19042024, cliente, produtos);
 
-console.log(`O valor da venda #${venda.codigo} feita pelo cliente ${venda.cliente.nome} foi de: ${Math.round(venda.calcularTotal()*100)/100}`)
+console.log(`O valor da venda #${venda.codigo} feita pelo cliente ${venda.cliente.nome} foi de: ${Math.round(venda.calcularTotal()*100)/100}`);
