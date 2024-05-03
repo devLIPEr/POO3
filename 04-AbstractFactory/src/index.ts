@@ -1,11 +1,11 @@
-import Client from "../clients/Client";
-import AiqfomeDelivery from "../deliveries/AiqfomeDelivery";
-import Company from "../deliveries/Company";
-import IFoodDelivery from "../deliveries/IFoodDelivery";
-import IDelivetyFactory from "../deliveries/interfaces/IDeliveryFactory";
+import Client from "./clients/Client";
+import AiqfomeDelivery from "./deliveries/AiqfomeDelivery";
+import Company from "./deliveries/Company";
+import IFoodDelivery from "./deliveries/IFoodDelivery";
+import IDeliveryFactory from "./deliveries/interfaces/IDeliveryFactory";
 
 const currentCompany = Company.IFOOD;
-let factory: IDelivetyFactory;
+let factory: IDeliveryFactory;
 
 if(currentCompany === Company.IFOOD){
     factory = new IFoodDelivery();

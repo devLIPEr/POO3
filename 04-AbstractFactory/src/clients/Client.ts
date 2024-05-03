@@ -1,4 +1,4 @@
-import IDelivetyFactory from "../deliveries/interfaces/IDeliveryFactory";
+import IDeliveryFactory from "../deliveries/interfaces/IDeliveryFactory";
 import IDrink from "../products/drinks/interfaces/IDrink";
 import IFood from "../products/foods/interfaces/IFood";
 
@@ -6,7 +6,7 @@ export default class Client{
     private drink: IDrink;
     private food: IFood;
 
-    constructor(factory: IDelivetyFactory){
+    constructor(factory: IDeliveryFactory){
         this.drink = factory.createDeliveryDrink();
         this.food = factory.createDeliveryFood();
     }
