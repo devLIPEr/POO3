@@ -20,8 +20,7 @@ function startAdvancedLive(platform: IPlatform){
     live.result();
     live.subtitles();
     live.comments();
-    console.log('')
-
+    console.log('');
 }
 
 startAdvancedLive(new YouTube());
